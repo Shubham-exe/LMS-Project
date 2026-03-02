@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema(
         imageUrl: {type: String, required: true},
         enrolledCourses: [
             {
-                trpe: mongoose.Schema.Types.ObjectId,
+                type: mongoose.Schema.Types.ObjectId,
                 ref: 'Course'
             }
         ]
